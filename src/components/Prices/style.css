@@ -1,0 +1,120 @@
+
+#prices {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 500px;
+}
+
+#prices h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.cryptos-container {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: var(--crypto-background);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.cryptos-container__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.cryptos-container__form input {
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    background: var(--crypto-background);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    transition: box-shadow 500ms ease;
+    color: var(--secondary-color);
+}
+
+.cryptos-container__form input:focus {
+    box-shadow: 0px 0px 30px rgba(0, 46, 53, 0.5);
+}
+
+.cryptos-container__form input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.table-cryptos {
+    margin-top: 30px;
+    width: 100%;   
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.table-cryptos__header {
+    height: 200px;
+}
+
+.table-cryptos h6 {
+    font-size: 14px;
+    color: var(--primary-color);
+    padding: 15px 0;
+}
+
+
+.cryptos-container__pages {
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.cryptos-container__pages p {
+    grid-column: 2 / 3;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.cryptos-container__pages button {
+    width: 150px;
+    margin: auto;
+    padding:10px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
+}
+
+.cryptos-container__pages--next-button {
+    grid-column: 3 / 4;
+    
+}
+
+.cryptos-container__pages--prev-button {
+    grid-column: 1 / 2;
+}
+
+@media screen and (max-width: 700px) {
+    #prices {
+        width: 95%;
+    }
+
+    .cryptos-container__pages p {
+        font-size: 12px;
+    }    
+
+    .cryptos-container__pages button {
+        width: 60px;
+    }
+}

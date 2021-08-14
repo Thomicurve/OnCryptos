@@ -1,0 +1,200 @@
+
+main {
+    margin-top: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 95%;
+}
+
+.title-left h2 {
+    color: var(--primary-color);
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.title-left h3 {
+    color: var(--primary-color-opaque);
+    margin-top: 5px;
+}
+
+.title-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--body-light-color);
+    border-radius: 15px;
+    width: 350px;
+    height: 75px;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 650ms ease;
+    /* cursor: pointer; */
+}
+
+.title-right:hover {
+    box-shadow: 0px 0px 30px rgba(1, 75, 87, 0.5);
+}
+
+.title-right__image {
+    border-radius: 50%;
+    width: 70px;
+    margin-left: 10px;
+}
+
+
+.title-right__crypto-name {
+    margin-left: 30px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.title-right__crypto-name h4 {
+    color: var(--secondary-color);
+}
+
+.title-right__crypto-name h5 {
+    color: var(--secondary-hover-color);
+}
+
+.title-right__last-price {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.title-right__last-price svg {
+    margin-left: 6px;
+}
+
+.last-price__up {
+    color: var(--primary-color);
+}
+
+.last-price__down {
+    color: var(--price-down);
+}
+
+/* FIGURES */
+
+.circle-figure {
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    z-index: -1;
+    background-color: var(--body-light-color);
+    border-radius: 50%;
+    opacity: 50%;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 1);
+}
+
+.circle-figure--1 {
+    top: -350px;
+    left: -250px;
+}
+
+.circle-figure--2 {
+    bottom: -100px;
+    right: -400px;
+}
+
+
+
+@media screen and (max-width: 1110px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 300px;
+    }
+
+    .title-left {
+        text-align: center;
+    }
+
+    .title-left h2 {
+        font-size: 28px;
+    }
+    .title-left h3 {
+        font-size: 18px;
+    }
+
+    .title-right {
+        margin-top: 50px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    main {
+        width: 100%;
+    }
+
+    /* LEFT SIDE */
+
+    .title-left {
+        text-align: center;
+        width: 100%;
+    }
+    .title-left h2 {
+        font-size: 17px;
+    }
+    .title-left h3 {
+        font-size: 12px;
+    }
+
+    .title-right {
+        margin-top: 50px;
+        width: 300px;
+    }
+
+    .circle-figure--1 {
+        top: -350px;
+        left: -250px;
+    }
+    
+    .circle-figure--2 {
+        bottom: -100px;
+        right: -400px;
+    }
+
+    /* RIGHT SIDE */
+
+    .title-right__image {
+        border-radius: 50%;
+        width: 50px;
+        margin-left: 10px;
+    }
+
+    .title-right__crypto-name h4 {
+        font-size: 14px;
+    }
+    
+    .title-right__crypto-name h5 {
+        font-size: 12px;
+    }
+    
+    .title-right__last-price {
+        font-size: 20px;
+        width: 65%;
+    }
+
+    /* FIGURES */
+
+    .circle-figure {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .circle-figure--1 {
+        top: -350px;
+        left: -250px;
+    }
+    
+    .circle-figure--2 {
+        bottom: -100px;
+        right: -300px;
+    }
+}
+
