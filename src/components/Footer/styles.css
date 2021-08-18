@@ -50,13 +50,6 @@
     margin-right: 5px;
 }
 
-.about-container__ssl{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 200px;
-}
-
 
 @media screen and (max-width: 970px) {
     .about-container {
@@ -67,12 +60,6 @@
     .about-container__information {
         flex-direction: column;
         justify-content: center;
-    }
-
-    .about-container__ssl {
-        width: 100%;
-        margin: auto;
-        margin-top: 40px;
     }
 
     .about-container__left-side {
