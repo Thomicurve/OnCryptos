@@ -11,7 +11,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
         clean: true,
-        assetModuleFilename: 'images/[hash][ext][query]'
+        assetModuleFilename: 'images/[hash][ext][query]',
+        publicPath: '/'
     },
     module: {
         rules: [
