@@ -10,10 +10,13 @@ export default function Prices() {
     const [cryptos, setCryptos] = useState([]);
     const [filter, setFilter] = useState('');
     const [currentPage, setCurrentPage] = useState(1);
+    const [loading, setLoading] = useState(true);
 
     const callCryptos = useCallback(async () => {
+        setLoading(true);
         const cryptoData = await getCryptos(currentPage);
         setCryptos(cryptoData);
+        setLoading(false);
     }, [currentPage])
 
 
@@ -55,7 +58,7 @@ export default function Prices() {
                     </thead>
                     <tbody>
                         {cryptoFiltered.map(e => {
-                            return <CryptoCard cryptos={e} key={e.id} />
+                            return <CryptoCard isLoading={loading} cryptos={e} key={e.id} />
                         })}
                     </tbody>
                 </table>
