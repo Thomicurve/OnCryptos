@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react'
-import { getCryptos } from '../../services/cryptoServices'
+import { getCryptos } from '@services/cryptoServices'
 import CryptoCard from '../CryptoCard'
 import { Reveal, Tween } from 'react-gsap'
 

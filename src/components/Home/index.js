@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getOneCrypto } from '../../services/cryptoServices';
+import { getOneCrypto } from '@services/cryptoServices';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
